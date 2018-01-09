@@ -16,7 +16,11 @@ class TravelsIndex extends React.Component {
 
     return (
       <div>
-        <h1>Hello</h1>
+        <h1>
+          <em>H</em>
+          <em class="planet left">e</em>
+            llo, I m a Junior Developer</h1>
+        <p class="interest">I am interested in both Front end and full stack roles</p>
       </div>
 
     );

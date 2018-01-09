@@ -4,17 +4,17 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './components/utility/Routes';
 import Navbar from './components/utility/Navbar';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import { grey, red, deepPurple } from 'material-ui/colors';
+import {red, pink, deepPurple } from 'material-ui/colors';
 import './scss/style.scss';
 
-const accent = grey['50']; // ---> #fafafa
-const second = deepPurple['900'];
+const accent = pink[900]; //#880E4F
+const second = deepPurple[900];
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      ...grey,
-      500: accent
+      ...pink,
+      900: accent
     },// Purple and green play nicely together.
     secondary: {
       ...deepPurple,
@@ -28,7 +28,7 @@ class App extends React.Component {
 
   render() {
     return (
-      // <MuiThemeProvider theme={theme}>
+      <MuiThemeProvider theme={theme}>
         <Router>
           <div className="container">
             <main>
@@ -37,6 +37,7 @@ class App extends React.Component {
             </main>
           </div>
         </Router>
+        </MuiThemeProvider>
 
     );
   }
