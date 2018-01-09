@@ -15,7 +15,7 @@ const theme = createMuiTheme({
     primary: {
       ...grey,
       500: accent
-    },
+    },// Purple and green play nicely together.
     secondary: {
       ...deepPurple,
       900: second
@@ -28,16 +28,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
+      // <MuiThemeProvider theme={theme}>
         <Router>
           <div className="container">
-            <Navbar />
             <main>
               <Routes />
+              <Navbar />
             </main>
           </div>
         </Router>
-      </MuiThemeProvider>
+
     );
   }
 }

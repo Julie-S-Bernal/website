@@ -1,46 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from '../utility/Routes';
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import { grey, red, deepPurple } from 'material-ui/colors';
-import '../../scss/style.scss';
+import React    from 'react';
 
-const accent = grey['50']; // ---> #fafafa
-const second = deepPurple['900'];
+// import { Link } from 'react-router-dom';
+// import Card from '../utility/Card';
+// import Auth from '../../lib/Auth';
+// import Button from 'material-ui/Button';
+// import Grid from 'material-ui/Grid';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      ...grey,
-      500: accent
-    },// Purple and green play nicely together.
-    secondary: {
-      ...deepPurple,
-      900: second
-    },
-    error: red
+
+class TravelsIndex extends React.Component {
+  state = {
+    projects: []
   }
-});
-
-class App extends React.Component {
 
   render() {
+
     return (
-      <MuiThemeProvider theme={theme}>
-        <Router>
-          <div className="container">
-            <main>
-              <Routes />
-            </main>
-          </div>
-        </Router>
-      </MuiThemeProvider>
+      <div>
+        <h1>Hello</h1>
+      </div>
+
     );
   }
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
+export default TravelsIndex;
