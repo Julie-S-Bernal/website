@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';
+import backImage from '../../images/website.svg';
 
 const styles = theme => ({
   root: {
@@ -36,9 +37,13 @@ class ProjectsIndex extends React.Component {
         </Grid>
         <Grid justify="center" item xs={8} sm={8} md={8} lg={8} xl={8}>
             <p class="text">Hello</p>
-            <p class="text">I m a Junior Developer</p>
+            <p class="text">I am a <em class="green">Junior Web Developer</em></p>
+            <p class="text"> I am interested in both <em class="pink">Front End</em> and <em class="pink">Full Stack </em> roles.</p>
           </Grid>
         </Grid>
+        <div className="backImage">
+         <img src={backImage} width="100" height="50" />
+       </div>
       </div>
 
     );
