@@ -1,30 +1,46 @@
 import React    from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import Paper from 'material-ui/Paper';
+import Grid from 'material-ui/Grid';
 
-// import { Link } from 'react-router-dom';
-// import Card from '../utility/Card';
-// import Auth from '../../lib/Auth';
-// import Button from 'material-ui/Button';
-// import Grid from 'material-ui/Grid';
-
-
-class TravelsIndex extends React.Component {
-  state = {
-    projects: []
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+    marginTop: 30
+  },
+  paper: {
+    padding: 16,
+    textAlign: 'center',
+    color: theme.palette.text.secondary
   }
+});
 
+class ProjectsIndex extends React.Component {
   render() {
 
     return (
+
       <div>
-        <h1>
-          <em>H</em>
-          <em class="planet left">e</em>
-            llo, I m a Junior Developer</h1>
-        <p class="interest">I am interested in both Front end and full stack roles</p>
+        <Grid container spacing={24} >
+          <Grid justify="center" item xs={8} sm={8} md={8} lg={8} xl={8}>
+            <h1>
+              <em class="planet left">""</em>
+            </h1>
+            <div class="circle-text">
+
+            </div>
+            <p class="text">Hello</p>
+            <p class="text">I m a Junior Developer</p>
+            </Grid>
+            <Grid item xs={10} sm={8} md={8} lg={8} xl={8}>
+            <p class="interest">I am interested in both <b>Front End</b> and <b>Full Stack</b> roles</p>
+          </Grid>
+        </Grid>
       </div>
 
     );
   }
 }
 
-export default TravelsIndex;
+export default ProjectsIndex;

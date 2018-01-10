@@ -36,6 +36,7 @@ function ButtonAppBar(props) {
           <IconButton className={classes.menuButton} color="contrast" aria-label="Menu">
             <MenuIcon />
           </IconButton>
+          <Button color="contrast">About</Button>
           <Button color="contrast">Projects</Button>
           <Button color="contrast">Linkedin</Button>
           <Button color="contrast">Github</Button>
