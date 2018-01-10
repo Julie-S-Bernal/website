@@ -23,18 +23,20 @@ class ProjectsIndex extends React.Component {
 
       <div>
         <Grid container spacing={24} >
+          <Grid justify="center" item xs={2} sm={2} md={2} lg={2} xl={2}>
+          </Grid>
           <Grid justify="center" item xs={8} sm={8} md={8} lg={8} xl={8}>
-            <h1>
-              <em class="planet left">""</em>
-            </h1>
             <div class="circle-text">
 
             </div>
+          </Grid>
+          <Grid item xs={2} sm={2} md={2} lg={2} xl={2}>
+        </Grid>
+        <Grid justify="center" item xs={2} sm={2} md={2} lg={2} xl={2}>
+        </Grid>
+        <Grid justify="center" item xs={8} sm={8} md={8} lg={8} xl={8}>
             <p class="text">Hello</p>
             <p class="text">I m a Junior Developer</p>
-            </Grid>
-            <Grid item xs={10} sm={8} md={8} lg={8} xl={8}>
-            <p class="interest">I am interested in both <b>Front End</b> and <b>Full Stack</b> roles</p>
           </Grid>
         </Grid>
       </div>

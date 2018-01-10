@@ -43,12 +43,6 @@ span{
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
-  margin: 0;
-  height: 12vmin;
-  width: 120vmin;
-  display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 // h1::before {
@@ -70,12 +64,9 @@ h1 {
 .circle-text:after  {
     content: "";
     display:flex;
-    justify-content: center;
-    // text-align: center;
     width: 100%;
     height:0;
     padding-bottom: 100%;
-    margin: 2vh;
     background: white;
     border: solid 4px black;
     -moz-border-radius: 100%;
@@ -85,7 +76,7 @@ h1 {
 .circle-text div {
     text-transform:uppercase;
     // padding-top:4vh;
-    border-color: solid 5px black;
+
     text-align:center;
     color:white;
 }
@@ -142,7 +133,7 @@ p.text{
   text-align: center;
   color: #34495e;
   font-size: 5vmin;
-  padding-top: -20vh;
+  // padding-top: -20vh;
     font-family: 'Fjalla One', sans-serif;
   // margin-bottom: 2vh;
   margin-top: -2vh;
