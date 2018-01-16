@@ -8,16 +8,16 @@
     "node": "8.x.x"
   },
   "scripts": {
-  "postinstall": "yarn build",
-  "start": "node index",
-  "start:client": "webpack-dev-server",
-  "start:server": "nodemon",
-  "build": "webpack -p",
-  "seed": "node db/seeds",
-  "test:client": "node_modules/.bin/_mocha test/client/helper \"test/client/**/*_test.js\"",
-  "test:server": "node_modules/.bin/_mocha \"test/api/**/*_test.js\"",
-  "test": "yarn test:server && yarn test:client"
-},
+    "postinstall": "yarn build",
+    "start": "node index",
+    "start:client": "webpack-dev-server",
+    "start:server": "nodemon",
+    "build": "webpack -p",
+    "seed": "node db/seeds",
+    "test:client": "node_modules/.bin/_mocha test/client/helper \"test/client/**/*_test.js\"",
+    "test:server": "node_modules/.bin/_mocha \"test/api/**/*_test.js\"",
+    "test": "yarn test:server && yarn test:client"
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "babel": "^6.23.0",
@@ -36,12 +36,13 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-15": "^1.0.5",
     "express": "^4.16.2",
+    "file-loader": "^1.1.6",
     "istanbul": "^0.4.5",
     "jsdom": "^11.5.1",
     "jsonwebtoken": "^8.1.0",
+    "material-design-icons": "^3.0.1",
     "material-ui": "^1.0.0-beta.23",
     "material-ui-icons": "^1.0.0-beta.17",
-    "material-design-icons": "^3.0.1",
     "mocha": "^4.0.1",
     "mongoose": "^4.13.7",
     "mongoose-unique-validator": "^1.0.6",
@@ -52,8 +53,8 @@
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.2.0",
     "sass-loader": "^6.0.6",
-    "supertest": "^3.0.0",
     "style-loader": "^0.18.2",
+    "supertest": "^3.0.0",
     "typeface-roboto": "^0.0.45",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
@@ -61,5 +62,5 @@
   },
   "devDependencies": {
     "html-webpack-plugin": "^2.29.0"
-    }
+  }
 }

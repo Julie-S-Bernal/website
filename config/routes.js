@@ -5,11 +5,9 @@ const projects = require('../controllers/projects');
 router.route('/')
   .get(projects.index);
 
-router.route('/homepage')
+router.route('/projects')
   .get(projects.show);
 
-router.route('/projects/:id')
-  .get(projects.show);
 
 router.all('/*', (req, res) => res.notFound());
 

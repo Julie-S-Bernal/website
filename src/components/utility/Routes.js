@@ -1,4 +1,5 @@
 import React             from 'react';
+
 import { Route, Switch } from 'react-router-dom';
 import ProjectsIndex from '../projects/ProjectsIndex';
 import ProjectsShow  from  '../projects/ProjectsShow';
@@ -6,10 +7,12 @@ import ProjectsShow  from  '../projects/ProjectsShow';
 
 const Routes = () => {
   return (
+
     <Switch>
       <Route exact path="/" component={ProjectsIndex} />
-      <Route path="/projects/:id'" component={ProjectsShow} />
+      <Route path="/projects" component={ProjectsShow} />
     </Switch>
+
   );
 };
 
