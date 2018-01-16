@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Fjalla One', sans-serif;
 // font-family: 'Fira Sans', sans-serif;
+// font-family: 'Raleway', sans-serif;
 
 
 
@@ -15,13 +17,13 @@ body {
 }
 
 span{
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.5vh;
   color: white;
 }
 
 a{
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.5vh;
   color: white;
   text-decoration: none;
@@ -46,11 +48,12 @@ h4{
 P{
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2rem;
+
 }
 
 section {
   color: #E4D7DE;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #232735;
   padding: 2vh;
   margin-left: 1%;
@@ -97,6 +100,26 @@ section {
   font-weight: 500;
 }
 
+.green_show{
+
+  font-style:normal;
+  text-transform:uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  color:  black;
+  font-weight: 100;
+  font-size: 1.5vh;
+  padding-left: 4%;
+  padding-right:4%;
+
+}
+.title_show{
+  padding-left: 4%;
+  color:  #6AD898;
+}
+.space{
+  padding: 5vh;
+}
+
 .pink{
   font-style:normal;
   text-transform:uppercase;
@@ -111,11 +134,28 @@ section {
   font-size: 2.4vh;
 
 }
- .profile{
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
- }
+
+.description{
+  color: #E4D7DE;
+  background-color: #232735;
+  padding: 1vh;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 1rem;
+  z-index: 1;
+  height: 20vh;
+}
+
+.description_text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4vh;
+    padding: 2%;
+    color: white;
+    line-height: 20px;
+}
+.devicon-git-plain {
+font-size: 14px;
+}
 
  .image {
   width: 300px;
@@ -150,26 +190,34 @@ section {
   width: 130px;
 }
 
-.profile{
+.profilepic{
   height: 10%;
+  border-radius: 100%;
+  background-image: url("../images/profilepic.png");
+  width: 100px;
   border-radius: 100%;
 }
 
+.devicon{
+  font-size: 500%;
 
-.overlay{
-  position:fixed;
-   background:url(https://i.imgur.com/zkARFQ3.png);
-  -webkit-animation:100s scroll infinite linear;
-  -moz-animation:100s scroll infinite linear;
-  -o-animation:100s scroll infinite linear;
-  -ms-animation:100s scroll infinite linear;
-  animation:100s scroll infinite linear;
-  top:0;
-  left:0;
-  width:100%;
-  margin-top:80vh;
- height:50%;
 }
+
+
+// .overlay{
+//   position:fixed;
+//    background:url(http://imgbox.com/2ANjQQ7s);
+//   -webkit-animation:100s scroll infinite linear;
+//   -moz-animation:100s scroll infinite linear;
+//   -o-animation:100s scroll infinite linear;
+//   -ms-animation:100s scroll infinite linear;
+//   animation:100s scroll infinite linear;
+//   top:0;
+//   left:0;
+//   width:100%;
+//   margin-top:80vh;
+//  height:50%;
+// }
 
 
 @-webkit-keyframes scroll{

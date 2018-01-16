@@ -27,7 +27,6 @@ module.exports = {
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       { test: /\.scss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
-      {test: /\.(png|jpg)$/, loader: 'url?limit=25000'},
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' },
       { test: /\.(woff|woff2|png)$/, loader: 'url-loader?prefix=font/&limit=5000' },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=application/octet-stream' },
