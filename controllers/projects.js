@@ -9,19 +9,19 @@ function projectsIndex(req, res, next) {
 }
 
 
-function projectsShow(req, res, next) {
-  Project
-    .findById(req.params.id)
-    .exec()
-    .then((project) => {
-      if(!project) return res.notFound();
-      res.json(project);
-    })
-    .catch(next);
-}
+// function projectsShow(req, res, next) {
+//   Project
+//     .findById(req.params.id)
+//     .exec()
+//     .then((project) => {
+//       if(!project) return res.notFound();
+//       res.json(project);
+//     })
+//     .catch(next);
+// }
 
 module.exports = {
-  index: projectsIndex,
-  show: projectsShow
+  index: projectsIndex
+  // show: projectsShow
 
 };

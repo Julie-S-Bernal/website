@@ -2,7 +2,7 @@ import React             from 'react';
 
 import { Route, Switch } from 'react-router-dom';
 import ProjectsIndex from '../projects/ProjectsIndex';
-import ProjectsShow  from  '../projects/ProjectsShow';
+// import ProjectsShow  from  '../projects/ProjectsShow';
 // import ProtectedRoute from './ProtectedRoute';
 
 const Routes = () => {
@@ -10,7 +10,7 @@ const Routes = () => {
 
     <Switch>
       <Route exact path="/" component={ProjectsIndex} />
-      <Route path="/projects" component={ProjectsShow} />
+      {/* <Route path="/projects" component={ProjectsShow} /> */}
     </Switch>
 
   );
