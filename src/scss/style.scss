@@ -6,14 +6,27 @@
 // font-family: 'Fira Sans', sans-serif;
 // font-family: 'Raleway', sans-serif;
 
+// a:hover {
+//     background-color: yellow;
+// }
+//
+// .dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF5252; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
 
 
 body {
-  overflow: hidden;
+  // overflow: hidden;
   display: flex;
   justify-content: center;
   margin-bottom: -10vh;
-  background-color: #2D303E;
+  background-color: #303F9F;
+  margin-bottom: 5em;
 }
 
 span{
@@ -51,8 +64,9 @@ P{
 
 }
 
-section {
-  color: #E4D7DE;
+
+#main {
+  color: white;
   font-family: 'Raleway', sans-serif;
   background-color: #232735;
   padding: 2vh;
@@ -62,9 +76,21 @@ section {
   z-index: 1;
 
 }
-
+#skills{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  background-color: #303F9F ;
+  padding: 2vh;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 1rem;
+  z-index: 2;
+}
+.name{
+  font-size: 4vh;
+}
 .top {
-  height: 15vh;
+  height: 10vh;
 }
 
 .portrait {
@@ -72,34 +98,27 @@ section {
   width: 0 auto;
   align-content: center;
 }
-// .circle-text:after  {
-//     content: "";
-//     display:flex;
-//     width: 100%;
-//     height:0;
-//     padding-bottom: 100%;
-//     background: url("https://i.imgur.com/CGuh7b6.jpg");
-//     border: solid 4px black;
-//     -moz-border-radius: 100%;
-//     -webkit-border-radius: 100%;
-//     border-radius: 100%;
-// }
-// .circle-text div {
-//     text-transform:uppercase;
-//     text-align:center;
-//     color:white;
-//     height: 2.5vh;
-// }
 
 .green{
 
   font-style:normal;
   text-transform:uppercase;
   font-family: 'Fjalla One', sans-serif;
-  color:  #6AD898;
+  color:  #FF5252;
   font-weight: 500;
+  font-size: 10vh;
 }
-
+.hori{
+  color: white;
+  background-color: white;
+  height: 0.4vh;
+  justify-content: center;
+}
+.interest{
+  color:black;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 6vh;
+}
 .green_show{
 
   font-style:normal;
@@ -114,7 +133,7 @@ section {
 }
 .title_show{
   padding-left: 4%;
-  color:  #6AD898;
+  color:  #FF5252;
 }
 .space{
   padding: 5vh;
@@ -124,7 +143,7 @@ section {
   font-style:normal;
   text-transform:uppercase;
   font-family: 'Fjalla One', sans-serif;
-  color: pink;
+  color: #00BCD4;
   font-weight: 500;
 
 }
@@ -132,7 +151,12 @@ section {
 .text_box{
   text-align: center;
   font-size: 2.4vh;
+  color: white;
 
+}
+.about{
+  color: #FF5252;
+  font-size:2.4vh;
 }
 
 .description{
@@ -193,31 +217,43 @@ font-size: 14px;
 .profilepic{
   height: 10%;
   border-radius: 100%;
-  background-image: url("../images/profilepic.png");
+  // background-image: url("../images/profilepic.png");
   width: 100px;
   border-radius: 100%;
 }
 
 .devicon{
-  font-size: 500%;
-
+  font-size: 4rem;
+  display:inline-flex;
+  padding: 0.2em;
+  background: -webkit-linear-gradient(#eee,  #FF5252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+ .image_test{
+   background-color: black;
+   height:100px;
+   width:100px;
+    display:block-flex;
+   padding: 0.2em;
+   }
 
+.overlay{
+  position:fixed;
+   background: url(../images/whitefooter.png);
 
-// .overlay{
-//   position:fixed;
-//    background:url(http://imgbox.com/2ANjQQ7s);
-//   -webkit-animation:100s scroll infinite linear;
-//   -moz-animation:100s scroll infinite linear;
-//   -o-animation:100s scroll infinite linear;
-//   -ms-animation:100s scroll infinite linear;
-//   animation:100s scroll infinite linear;
-//   top:0;
-//   left:0;
-//   width:100%;
-//   margin-top:80vh;
-//  height:50%;
-// }
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  top:0;
+  left:0;
+  width:100%;
+  margin-top:80vh;
+  height:50%;
+  z-index:-1;
+}
 
 
 @-webkit-keyframes scroll{

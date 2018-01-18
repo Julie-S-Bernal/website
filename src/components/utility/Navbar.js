@@ -37,7 +37,7 @@ const styles = {
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
-    <div class="navbar" className={classes.root}>
+    <div className="navbar" className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
           <IconButton className={classes.menuButton} color="default" aria-label="Menu">
