@@ -115,7 +115,9 @@ class ProjectsIndex extends React.Component {
                   <h2 className="title">
                     Game -What the Hell?
                   </h2>
+                  <div className="container">
                   <img className="image" src={project1}></img>
+                  </div>
                   <h4 className="tech">jQuery | CSS3 | HTML5 | Babel | Webpack </h4>
                    <div className="description">
                     <p className="description_text">
