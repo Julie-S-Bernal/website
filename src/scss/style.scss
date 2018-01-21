@@ -42,11 +42,7 @@ h2{
   font-size: 2rem;
 }
 
-h4{
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 200;
-  font-size: 1.2rem;
-}
+
 
 
 
@@ -120,13 +116,16 @@ h4{
   font-size: 1.5vh;
   padding-left: 4%;
   padding-right:4%;
+  margin-bottom:-1vh;
 
 }
 .title{
-  padding-left: 4%;
+
   color:  #FF5252;
   font-size: 4vh;
   padding: 2vh;
+  margin: -1vh;
+  margin-top: 1vh;
 }
 .space{
   padding: 5vh;
@@ -186,6 +185,8 @@ height: 40vh;
 
 .description_text{
   color: white;
+  height:24vh;
+  margin-top: -0.5vh;
   font-family: 'Raleway', sans-serif;
   // background-color: #232735;
   padding: 2vh;
@@ -195,63 +196,83 @@ height: 40vh;
   font-size: 2vh;
   z-index: 1;
 }
-
 .tech-container{
-  height: 7.4vh;
+
+  width:100%;
+  height: 10vh;
+
+
 }
 .devicon-git-plain {
 font-size: 500px;
 }
 
 .image{
-  border: 1px solid red;
-  height: 0;
+ 
+  height: 100%;
   overflow: hidden;
   padding-top: 100%;
   box-sizing: border-box;
   position: relative;
 }
 
-.image_container{
-  border: 1px solid red;
-  height: 0;
-  overflow: hidden;
-  padding-top: 100%;
-  box-sizing: border-box;
-  position: relative;
-  margin:2vh;
+.game_container{
+  background: url(../images/project1.png);
+  background-size: cover;
+  position:relative;
+  height: 20vh;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-position: center;
+  background-color: #4D4E56;
 
 
 }
-// .image:before {
-//   display: block;
-//   content: "";
-//   border-bottom: 20px solid #2D303E;
-//   border-right: 20px solid transparent;
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 130px;
-// }
-//
-// .image:after {
-//   display: block;
-//   content: "";
-//   border-bottom: 20px solid #2D303E;
-//   border-left: 20px solid transparent;
-//   position: absolute;
-//   bottom: 0;
-//   right: 0;
-//   width: 130px;
-// }
 
-.profilepic{
-  height: 10%;
-  border-radius: 100%;
-  // background-image: url("../images/profilepic.png");
-  width: 100px;
-  border-radius: 100%;
+.website_container{
+  background: url(../images/project2a.png);
+  background-size: 100% 100%;
+  position:relative;
+  height: 20vh;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-position: center;
+  background-color: #4D4E56;
+
+
 }
+
+.app_container{
+  background: url(../images/project3a.png);
+  background-size: cover;
+  position:relative;
+  height: 20vh;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-position: center;
+  background-color: #4D4E56;
+
+
+}
+
+.phone_container{
+  background: url(../images/project4b.png);
+  background-size: cover;
+  position:relative;
+  height: 20vh;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-position: center;
+  background-color: #4D4E56;
+
+
+}
+
+
 
 .devicon{
   font-size: 6vh;
@@ -274,17 +295,33 @@ font-size: 500px;
   text-transform:uppercase;
   color: white;
  
+// .t-align{
+// width: 200px;
+// height:500px;
+// }
 
-.links{
-  color: #00BCD4;
+
+.link-button {
+  position:fixed;
+  bottom:0;
+  margin: 2vh;
+}
+
+Button{
+  position:fixed;
+  bottom:0;
+  margin: 2vh
 
 }
 
+Button:hover{
+  background-color:#1A237E !important;
+  color: #FFF;
+}
 }
 .overlay{
   position:fixed;
    background: url(../images/whitefooter.png);
-
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
   -o-animation:100s scroll infinite linear;
@@ -292,7 +329,7 @@ font-size: 500px;
   animation:100s scroll infinite linear;
   top:0;
   left:0;
-  width:100%;
+  width:200%;
   margin-top:80vh;
   height:50%;
   z-index:-1;
