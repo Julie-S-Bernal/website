@@ -38,7 +38,7 @@ class ProjectsIndex extends React.Component {
           <Grid justify="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
             <div className="text_box">
               <h1 className="name">Julie Bernal</h1>
-              <p className="text"><em className="green">Junior Web Developer</em></p>
+              <p className="text"><em className="green">Junior Web Developer.</em></p>
               <p className="interest"> I am interested in  <em className="pink">Front End</em> and <em className="pink">Full Stack </em> roles.</p>
               <hr className="hori"></hr>
               <Button className="button top_button" ><a href="mailto:julies.bernal@gmail.com" target="_top">Contact me</a></Button>
