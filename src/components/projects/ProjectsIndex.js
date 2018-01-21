@@ -5,9 +5,9 @@ import Grid from 'material-ui/Grid';
 import profilepic from '../../images/profilepic.png';
 import Button from 'material-ui/Button';
 import project1 from '../../images/project1.png';
-import project2 from '../../images/project2.png';
-import project3 from '../../images/project3.png';
-import project4 from '../../images/project4.png';
+import project2 from '../../images/project2a.png';
+import project3 from '../../images/project3a.png';
+import project4 from '../../images/project4b.png';
 
 // import backImage from '/images/website.svg';
 
@@ -115,7 +115,7 @@ class ProjectsIndex extends React.Component {
                   <h2 className="title">
                     Game -What the Hell?
                   </h2>
-                  <div className="container">
+                  <div className="image_container">
                   <img className="image" src={project1}></img>
                   </div>
                   <h4 className="tech">jQuery | CSS3 | HTML5 | Babel | Webpack </h4>
@@ -133,8 +133,9 @@ class ProjectsIndex extends React.Component {
                     <h2 className="title">
                     Wesite- TeaMood
                     </h2>
-
+                    <div className="image_container">
                     <img className="image" src={project2}></img>
+                  </div>
 
                     <h4 className="tech"> EJS | Express | HTML5 | CSS3 | Mongoose | Morgan | Bluebird | MongoDB | Bootstrap | Bcrypt | Gulp | Nodemon </h4>
                     <div className="description">
@@ -194,7 +195,6 @@ class ProjectsIndex extends React.Component {
          <div className="overlay" >
          </div>
         </Grid>
-
 
 
       </div>
