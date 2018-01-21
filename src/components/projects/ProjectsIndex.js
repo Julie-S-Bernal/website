@@ -25,26 +25,17 @@ class ProjectsIndex extends React.Component {
     return (
 
       <div>
-        <Grid container spacing={24} >
+        {/* <Grid container spacing={24} >
           <div className="top"></div>
-        </Grid>
-        <Grid container spacing={24} >
-          <Grid container justify="center" item xs={2} sm={2} md={2} lg={2} xl={2}>
-          </Grid>
-          <Grid container justify="center" item xs={8} sm={8} md={8} lg={8} xl={8}>
-            {/* <div className="circle-text"> */}
+        </Grid> */}
+        <Grid container spacing={0} >
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
             <div className="text_box">
                <img with='100%' height='100%' className="portrait" src={profilepic}></img>
-            {/* <a href="https://imgur.com/zCX1a7b"><img className="portrait" src="https://i.imgur.com/zCX1a7b.png" title="source: imgur.com" /></a> */}
-            </div>
-          {/* </div> */}
-
+           </div>
           </Grid>
-          <Grid item xs={2} sm={2} md={2} lg={2} xl={2}>
-          </Grid>
-          <Grid container justify="center" item xs={2} sm={2} md={2} lg={2} xl={2}>
-          </Grid>
-          <Grid container justify="center" item xs={8} sm={8} md={8} lg={8} xl={8}>
+          <Grid container spacing={0} >
+          <Grid justify="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
             <div className="text_box">
               <h1 className="name">Julie Bernal</h1>
               <p className="text"><em className="green">Junior Web Developer</em></p>
@@ -55,7 +46,9 @@ class ProjectsIndex extends React.Component {
 
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
+          </Grid>
+          <Grid container spacing={0} >
+          <Grid justify="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
           <section id="main">
           <h1 className="about">ABOUT ME</h1>
         I always loved technology and for a long time, I thought that I would not fit into the programming world. As a result, I studied Art and International Relations but I never really found my place there. <br></br> At my previous internship, I was put in charge to revamp the intranet and I felt limited due to my lack of knowledge in coding. I took this as a learning opportunity and decided to learn CSS and HTML so that I could improve the design of these pages. that s when I realised that coding was definetely for me!
@@ -64,12 +57,9 @@ class ProjectsIndex extends React.Component {
          </section>
 
          </Grid>
-         <Grid container justify="center" item xs={2} sm={2} md={2} lg={2} xl={2}>
          </Grid>
-         <Grid item xs={8} sm={8} md={8} lg={8} xl={8}>
+         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
            <hr className="hori"></hr>
-         </Grid>
-         <Grid container justify="center" item xs={2} sm={2} md={2} lg={2} xl={2}>
          </Grid>
          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
            <section id="skills">
