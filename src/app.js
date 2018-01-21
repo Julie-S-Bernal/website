@@ -8,6 +8,7 @@ import './scss/style.scss';
 
 const accent = indigo[500]; //#3F51B5
 const second = red[900];
+const accent2 = red[100];
 
 const theme = createMuiTheme({
   palette: {
@@ -18,6 +19,10 @@ const theme = createMuiTheme({
     secondary: {
       ...red,
       900: second
+    },
+    secondary: {
+      ...red,
+      100: accent2
     },
     error: red
   }

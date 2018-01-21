@@ -25,9 +25,7 @@ class ProjectsIndex extends React.Component {
     return (
 
       <div>
-        {/* <Grid container spacing={24} >
-          <div className="top"></div>
-        </Grid> */}
+
         <Grid container spacing={0} >
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
             <div className="text_box">
@@ -40,9 +38,10 @@ class ProjectsIndex extends React.Component {
               <h1 className="name">Julie Bernal</h1>
               <p className="text"><em className="green">Junior Web Developer</em></p>
               <p className="interest"><em className="pink">Front End / Full Stack </em> </p>
+              <p className="interest"><em className="pink">Looking for a job </em> </p>
               <hr className="hori"></hr>
-              <Button className="button top_button" ><a href="mailto:julies.bernal@gmail.com" target="_top">Contact me</a></Button>
-              <Button className="button top_button"  ><a href="https://github.com/Julie-S-Bernal" target="_top">GitHub</a></Button>
+              <Button className="button" raised color="accent"> <a className="button-name" href="mailto:julies.bernal@gmail.com" target="_top">Contact me</a> </Button>
+              <Button className="button" raised color="accent"> <a className="button-name" href="https://github.com/Julie-S-Bernal" target="_top">GitHub</a> </Button>
 
             </div>
           </Grid>
@@ -51,10 +50,15 @@ class ProjectsIndex extends React.Component {
           <Grid justify="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
           <section id="main">
           <h1 className="about">ABOUT ME</h1>
-        I always loved technology and for a long time, I thought that I would not fit into the programming world. As a result, I studied Art and International Relations but I never really found my place there. <br></br> At my previous internship, I was put in charge to revamp the intranet and I felt limited due to my lack of knowledge in coding. I took this as a learning opportunity and decided to learn CSS and HTML so that I could improve the design of these pages. that s when I realised that coding was definetely for me!
-        I took the Web Development Immersive course at General Assembly and I am extremely happy with my choice. <br></br>
-        GA taught me how to understand code and how its different components interact with each other. I am now capable to do Express, MEAN and MEARN stack application. I especially love React and I am currently learning python.<br></br><em className="forward">I am looking forward to my future coding job!</em>
-         </section>
+          <p className= "about-text">
+
+          I just completed a 3 month Web Development Immersive boot camp at General Assembly where I was taught Restful, MEAN and MERN stacks applications. 
+          I am currently learning Python, reinforcing my current coding skills and working on an app.</p>
+          <p className= "about-text">
+          I became a coder enthusiast after completing a communication internship at Oak Foundation where I had the chance to revamp the front end of the intranet as well as to assist in the construction of their new website. Previously I studied Art and International Relations which allow me to approach coding with a different mind.</p>
+          <p className= "about-text">
+          In the near future, I intend to combine my 3 backgrounds to become a full stack developer, using creativity, design, and programming to find the best-fitted solutions for companies.</p>
+        </section>
 
          </Grid>
          </Grid>
@@ -99,16 +103,18 @@ class ProjectsIndex extends React.Component {
                 <div className="vertical"> <h1 className="projects"> Latest <br></br>Projetcs</h1>
                 </div>
               </Grid>
-              <Grid container spacing={24}>
+              <Grid container spacing={0}>
 
-                <Grid item xs={12} sm={6} md={6} lg={6} xl={3}>
+                <Grid item xs={12} sm={12} md={6} lg={6} xl={3}>
                   <h2 className="title">
                     Game -What the Hell?
                   </h2>
                   <div className="image_container">
                   <img className="image" src={project1}></img>
                   </div>
+                  <div className="tech-container">
                   <h4 className="tech">jQuery | CSS3 | HTML5 | Babel | Webpack </h4>
+                  </div>
                    <div className="description">
                     <p className="description_text">
                     What the hell is an endless flyer game. This app features collisions, key binding, timers, scores and sounds.
@@ -118,6 +124,7 @@ class ProjectsIndex extends React.Component {
 
                   </div>
                 </Grid>
+             
                 <Grid item xs={12} sm={6} md={6} lg={6} xl={3}>
 
                     <h2 className="title">
@@ -126,12 +133,13 @@ class ProjectsIndex extends React.Component {
                     <div className="image_container">
                     <img className="image" src={project2}></img>
                   </div>
-
+                  <div className="tech-container">
                     <h4 className="tech"> EJS | Express | HTML5 | CSS3 | Mongoose | Morgan | Bluebird | MongoDB | Bootstrap | Bcrypt | Gulp | Nodemon </h4>
+                    </div>
                     <div className="description">
                     <p className="description_text">
                      TeaMood is an app that put tea lovers in contact so that they can find together new teas to try.
-                     This app features login, user authentication, creation of posts, comments and error handlers.
+                     This app features login, user authentication, creation of posts, comments and error handlers.S
                      </p>
                      <Button raised color="accent"><a className="links" href="https://project-2-teas.herokuapp.com/register"> Heroku </a></Button>
                      <Button raised color="accent"><a className="links" href="https://github.com/Julie-S-Bernal/WDI_PROJECT_2"> GitHub</a></Button>
@@ -141,11 +149,11 @@ class ProjectsIndex extends React.Component {
                 <Grid item xs={12} sm={6} md={6} lg={6} xl={3}>
 
                     <h2 className="title">
-                    Website/phone App -ExploreMore
+                    App -ExploreMore
                     </h2>
-
+                    <div className="image_container">S
                     <img className="image" src={project3}></img>
-
+                    </div>
                       <h4 className="tech"> MEAN | Bulma | HTML5 | CSS3 |  Googlemap API  | Mocha | Chai | Istambul | Bcrypt | Bluebird | Expres | Express-jwt | Mongoose| MongoDB  | Babel | Bower| Cors | Gulp | Husky | Supertest | Morgan | Istambul </h4>
                       <div className="description">
                     <p className="description_text">
@@ -161,8 +169,9 @@ class ProjectsIndex extends React.Component {
                     <h2 className="title">
                     Phone App- Spare
                     </h2>
-
+                    <div className="image_container">
                     <img className="image" src={project4}></img>
+                    </div>
 
                     <h4 className="tech"> MERN | Material-ui| HTML5 | Webpack | CSS3 |  API  | Axios | Bcrypt | Bluebird | Express | JSOn web token| React-dom | Mongoose | MongoDB | Morgan  | Babel | Chai | Mocha | Enzyme | Istambul | Supertest | Sinon | Victory | Moment.js</h4>
                     <div className="description">

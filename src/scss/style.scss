@@ -48,11 +48,6 @@ h4{
   font-size: 1.2rem;
 }
 
-P{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.2rem;
-
-}
 
 
 #main {
@@ -62,6 +57,7 @@ P{
   padding: 2vh;
   margin-left: 1%;
   margin-right: 1%;
+  margin-bottom: 3vh;
   font-size: 1rem;
   z-index: 1;
 
@@ -85,6 +81,7 @@ P{
 
 .portrait {
   height:30vh;
+  margin-top: 2vh;
   width: 0 auto;
   align-content: center;
 }
@@ -104,7 +101,9 @@ P{
   color: white;
   background-color: white;
   height: 0.4vh;
+  width: 80vw;
   justify-content: center;
+  margin-bottom: 1vh;
 }
 .interest{
   color:black;
@@ -126,6 +125,8 @@ P{
 .title{
   padding-left: 4%;
   color:  #FF5252;
+  font-size: 4vh;
+  padding: 2vh;
 }
 .space{
   padding: 5vh;
@@ -147,12 +148,27 @@ a{
 Button{
   position:fixed;
   bottom:0;
+  margin: 2vh
+
 }
 
-.top_button{
-
-  background-color: #F44336;
+Button:hover{
+  background-color:#1A237E !important;
+  color: #FFF;
 }
+
+.button-name{
+
+  font-size: 2vh;
+  padding: 1vh;
+  margin: 1vh;
+}
+
+.about-text{
+font-size: 2vh;
+font-weight: 400;
+}
+
 .text_box{
   text-align: center;
   color: white;
@@ -164,40 +180,46 @@ Button{
 }
 
 .description{
-  color: #E4D7DE;
-  background-color: #232735;
-  padding: 1vh;
-  margin-left: 4%;
-  margin-right: 1%;
-  font-size: 1rem;
-  z-index: 1;
-  height: 20vh;
+background-color: #232735;
+height: 40vh;
 }
 
 .description_text{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4vh;
-    padding: 2%;
-    color: white;
-    line-height: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  // background-color: #232735;
+  padding: 2vh;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 3vh;
+  font-size: 2vh;
+  z-index: 1;
+}
+
+.tech-container{
+  height: 7.4vh;
 }
 .devicon-git-plain {
 font-size: 500px;
 }
 
 .image{
+  border: 1px solid red;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  box-sizing: border-box;
   position: relative;
-   float: left;
-   width:  100px;
-   height: 100px;
-   background-position: 50% 50%;
-   background-repeat:   no-repeat;
-   background-size:     cover;
 }
 
 .image_container{
-  min-width: 300px;
+  border: 1px solid red;
+  height: 0;
   overflow: hidden;
+  padding-top: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin:2vh;
 
 
 }
@@ -242,8 +264,8 @@ font-size: 500px;
 }
 
 .vertical{
-  border-left: 10px solid #FF5252;
-   height: 34vh;
+  border-left: 1.2vw solid #FF5252;
+   height: 25vh;
    margin-left: 2vw;
 }
 .projects{
