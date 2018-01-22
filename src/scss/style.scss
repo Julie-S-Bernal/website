@@ -180,7 +180,7 @@ font-weight: 400;
 
 .description{
 background-color: #232735;
-height: 40vh;
+height: 48vh;
 }
 
 .description_text{
@@ -208,7 +208,7 @@ font-size: 500px;
 }
 
 .image{
- 
+
   height: 100%;
   overflow: hidden;
   padding-top: 100%;
@@ -217,10 +217,10 @@ font-size: 500px;
 }
 
 .game_container{
-  background: url(../images/project1.png);
+  background: url(../images/thumb1.png);
   background-size: cover;
   position:relative;
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -231,10 +231,10 @@ font-size: 500px;
 }
 
 .website_container{
-  background: url(../images/project2a.png);
+  background: url(../images/thumb2.png);
   background-size: 100% 100%;
   position:relative;
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -245,10 +245,10 @@ font-size: 500px;
 }
 
 .app_container{
-  background: url(../images/project3a.png);
+  background: url(../images/thumb3.png);
   background-size: cover;
   position:relative;
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -259,10 +259,10 @@ font-size: 500px;
 }
 
 .phone_container{
-  background: url(../images/project4b.png);
+  background: url(../images/thumb4.png);
   background-size: cover;
   position:relative;
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -294,7 +294,7 @@ font-size: 500px;
   font-size: 10vh;
   text-transform:uppercase;
   color: white;
- 
+
 // .t-align{
 // width: 200px;
 // height:500px;
